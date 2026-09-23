@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>"More Basics"</title>
+    </head>
+    <body>
+        <!--Page Layout Tags: Used for controlling elements arrangement on a web page.-->
+        <!--Following semantic tags are used for layout.-->
+        <header> <!--This portion becomes the header portion of a webpage.-->
+            <h1>"This is in the header portion"</h1>
+        </header>
+        <main> <!--Main information is written in this portion.-->
+            <section> <!--For diving the content in the main portion into multiple sections,this tag is used.-->
+                <p>This is 1st section of main portion</p>
+            </section>
+            <section>
+                <p>This is 2nd section of main portion</p>
+            </section>
+            <section>
+                <a href="/More_Basics/Relative_Page.html">Relative Page On The Same Page Tab</a>
+                <br>
+                <a href="/More_Basics/Relative_Page2.html" target="_main">Ralative Page On The New Page Tab</a>
+                <br>
+                <!--Clickable Images that directs to the web page-->
+                <a href="https://www.google.com" target="_main"><img src="/More_Basics/Google.png" alt="Google Logo Image" height="100"></a>
+                <br>
+            </section>
+            <article>
+                <p>This tag is used for adding articles to your webpages.</p>
+            </article>
+            <div>
+                <p>The div tag(non-semantic tag) is used as a container that can contain other tags inside it, and covers a full line width.</p>
+            </div>
+            <!--Using Inline CSS inside the HTML element with the help of style="" attribute to the whole dev container.-->
+            <!--Inline CSS: When CSS commands are written inide the HTML element itself, rather than as a separate .css file or Block.-->
+            <!--style="" is an html attribute used to apply Inline CSS as values separated by ; to the HTML elements.-->
+            <div style="background-color:aqua;">
+                <p>This is a separate colored block!</p>
+            </div>
+            <!--Alligning images to the center and adjusting size using height.-->
+            <!--display=flex: Converts the whole dev container into a flex box,the elements are now its children.-->
+            <!--Flixbox: CSS layout model that lets you allign and arrange different child elements inside a webpage along a main axis-with easy control over spacing,direction,height and allignment,etc.-->
+            <!--justify-content:center : Horizontal allignment | aign-items: center : Verical allignmnet | height : 100vh(viewport height-Both height & width aspect ratio)-->
+            <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+                <img src="/More_Basics/Google.png" alt="Google Logo Image"></div>
+            <aside>
+                <p>This tag is used for adding contents aside main content,i.e., Irrelavent content that may be indirectly related to your main content.</p>
+                <span style="background-color:blanchedalmond;">
+                    <p>This span tag(non-semantic tag) is also a container like div, but takes line width equal to content inside it(Inline element).</p>
+                </span>
+            </aside>
+        </main>
+        <footer> <!--Additional information is usually written in this portion.-->
+            <pre>This is an additional info.
+You can contact me on this: 1234567, etc.</pre>
+        </footer>
+    </body>
+</html>
