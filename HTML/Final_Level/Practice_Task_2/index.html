@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Evaluation Form</title>
+</head>
+<body>
+    <h1 style="text-align: center;">"Course Evaluation Form"</h1>
+    <h2 style="text-align: center;">"7<sup>th</sup> Semester BS(Data Science)"</h2>
+    <h3 style="text-align: center;">"Parallel &amp; Distributed Computing (CS-401)"</h3>
+    <form action="/submit_evaluation.php">
+        <h4>"Student Information:"</h4>
+        <label for="Name">Student Name:</label>
+        <input type="text" placeholder="Enter Name" id="Name">
+        <br>
+        <label for="RegNo">Registration Number:</label>
+        <input type="text" placeholder="Enter Registration Number" id="RegNo">
+        <br>
+        <label for="Section">Section:</label>
+        <input type="text" placeholder="Enter Section" id="Section">
+        <br>
+        <h4>"Course Rating:"</h4>
+        <label for="R1">Poor</label>
+        <input type="radio" name="Rating-1" value="Poor" id="R1">
+        <label for="R2">Average</label>
+        <input type="radio" name="Rating-2" value="Average" id="R2">
+        <label for="R3">Good</label>
+        <input type="radio" name="Rating-3" value="Good" id="R3">
+        <label for="R4">Excellent</label>
+        <input type="radio" name="Rating-4" value="Excellent" id="R4">
+        <br>
+        <h4>"Instructor Rating:"</h4>
+        <label for="IR1">Poor</label>
+        <input type="radio" name="Instructor-Rating-1" value="Poor" id="IR1">
+        <label for="IR2">Average</label>
+        <input type="radio" name="Instructor-Rating-2" value="Average" id="IR2">
+        <label for="IR3">Good</label>
+        <input type="radio" name="Instructor-Rating-3" value="Good" id="IR3">
+        <label for="IR4">Excellent</label>
+        <input type="radio" name="Instructor-Rating-4" value="Excellent" id="IR4">
+        <br>
+        <h4>"Course Content Clarity:"</h4>
+        <label for="CC1">Poor</label>
+        <input type="radio" name="Content-Clarity-1" value="Poor" id="CC1">
+        <label for="CC2">Average</label>
+        <input type="radio" name="Content-Clarity-2" value="Average" id="CC2">
+        <label for="CC3">Good</label>
+        <input type="radio" name="Content-Clarity-3" value="Good" id="CC3">
+        <label for="CC4">Excellent</label>
+        <input type="radio" name="Content-Clarity-4" value="Excellent" id="CC4">
+        <br>
+        <h4>"Instructor Effectiveness:"</h4>
+        <label for="IE1">Poor</label>
+        <input type="radio" name="Instructor-Effectiveness-1" value="Poor" id="IE1">
+        <label for="IE2">Average</label>
+        <input type="radio" name="Instructor-Effectiveness-2" value="Average" id="IE2">
+        <label for="IE3">Good</label>
+        <input type="radio" name="Instructor-Effectiveness-3" value="Good" id="IE3">
+        <label for="IE4">Excellent</label>
+        <input type="radio" name="Instructor-Effectiveness-4" value="Excellent" id="IE4">
+        <br>
+        <h4>"Brief Description:"</h4>
+        <textarea name="Other Feedback" maxlength="200" placeholder="Enter Other Relevant Feedback" rows="4" cols="50"></textarea>
+        <input type="submit" value="Submit Evaluation Form">
+    </form>
+    <h5 style="text-align: center;">"Thank You for Your Feedback!"</h5>
+</body>
+</html>

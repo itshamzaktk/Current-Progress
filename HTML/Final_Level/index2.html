@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Forms</title> <!--HTML Forms: Interactive HTML elements for user input-->
+        <!--Data stored in form is sent via HTTP requests(GET/POST) to the backend server(server-side) by the Frontend(browser:client-side) to be processed,stored(or not),and the response goes back to the frontend.-->
+    </head>
+    <body>
+        <form action="/action.php"> <!--/action.php: Backend file that will process the form data-->
+            <!--action attribute specifies where to send the form data when the form is submitted by the user-->
+            <input type="text" placeholder="Enter Your Name"> <!--Input: Form element used for taking input data from the user. type="text" : Take text input | placeholder="Enter Your Name" : Placeholder text for the input field.This will be displayed when the input field is empty-->
+            <br>
+            <input type="password" placeholder="Enter Your Password"> <!--type="password" : Take password input. The characters will be hidden for security purposes-->
+            <br>
+            <label for="Name" >Name:</label> <!--Label: Form element used to provide a label for the input field. for="Name" : Associates the label with the input field with id="Name"-->
+            <input type="text" id="Name">
+            <br>
+            <label for="id1">Class 11th</label>
+            <input type="radio" name="Class" value="Class 11th" id="id1"> <!--Radio Button: Form element used for selecting one option from a group of options. name="class11" : Groups the radio buttons with the same name. value="11th" : Value that will be sent to the backend when this option is selected-->
+            <br>
+            <label for="id2">Class 12th</label>
+            <input type="radio" name="Class" value="Class 12th" id="id2">
+            <br>
+            <label for="M-101">Maths</label>
+            <input type="checkbox" value="Maths" name="Subject" id="M-101"> <!--Checkbox: Form element used for selecting multiple options from a group of options.-->
+            <br>
+            <label for="S-102">Science</label>
+            <input type="checkbox" value="Science" name="Subject" id="S-102">
+            <br>
+            <label for="E-103">English</label>
+            <input type="checkbox" value="English"
+             name="Subject" id="E-103">
+            <br>
+            <label id="000">Your Feedback:</label>
+            <textarea name="Feedback" id="000" placeholder="Enter Feedback" rows="4" cols="50" maxlength="200"></textarea> <!--Textarea: Form element used for taking multi-line input from the user. rows="4" : Number of visible text lines | cols="50" : Number of visible character columns-->
+        </form>
+        <br>
+        <label for="Dropdown">Select An Option:</label>
+        <select name="Options" id="Dropdown">
+            <option value="Option1">Option 1</option> <!--Dropdown: Form element used for selecting one option from a list of options.-->
+            <option value="Option2">Option 2</option>
+            <option value="Option3">Option 3</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit"> <!--Submit Button: Form element used for submitting the form data to the backend server. value="Submit" : Text displayed on the button-->
+        <br>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=arNLH2GvhX2XsvLL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> Iframe: Form element used for embedding external content, such as YouTube videos. -->
+        <br>
+        <video src="/Final_level/Video_Clip.mp4" width="560" height="315" controls>HTML Tutorial Clip</video>
+    </body>
+</html>
